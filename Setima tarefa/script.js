@@ -12,6 +12,17 @@ const obterNumeroUseuario = () => {
 document.getElementById('btnEnviar').addEventListener('click', () => {
     let numero = obterNumeroUseuario();
 
+    if (numero == '') {
+        alert(`Por favor digite um numero positivo.`);
+    };
+
+    numero = parseInt(numero);
+
+    if (isNaN(numero)){
+        alert(`Complete o campo com um numero valido.`)
+        return;
+    }
+
     if (numero < 0 ) {
         alert(`${numero} não é um numero positivo, por favor ingrese um numero positivo.`);
     } else {
