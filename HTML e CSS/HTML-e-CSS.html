@@ -1,0 +1,262 @@
+<!-- HTML (Hyper Text Markup Lenguage) é a linguagem de marcação padrão para a criação de paginas web.
+Ele fornece a estrutura e a organização do conteudo da pagina, permitindo que você defina elementos como titulos, paragrafos,
+links, imagens e muito mais.
+
+CSS (Cascadin Style Sheets) é usado para estilizar e formatar a aparência dos elementos HTML em uma pagina web. Ele permite
+que você defina cores, fontes, espaçamentos, layouts e outros estilos visuais.
+
+Estas seão as estapas que irei seguir para aorender HTML e CSS para criar paginas web basicas:
+
+----------------Estruturas basicas do documento HTML:
+    Aprender estruturas basicas de um documento HTML. Todo documento HTML começa com a tag `<!DOCTYPE html>´ seguida
+    pela tag `<html>´, que contem as seções ´<head>´e `<body>;
+
+----------------Tags e elementos HTML:
+    Explorar as diferentes tags HTML e seus atributos. alguns elementos HTML comuns incluem `<h1>´ para titulos, `<p>´para
+    paragrafos, `<a>´ para links, `<img>´ para imagens e assim por diante.
+
+----------------Aninhamento de elementos:
+    Aprender a aninhar elementos HTML dentro de outros elementos. Por exemplo, você pode ter um paragrafo `<p>´dentro de uma div 
+    `<div>´, ou um link `<a>´ dentro de um paragrafo `<p>´.
+
+----------------:Atributos HTML:
+    Familiarizar-se com os atributos HTML que você pode adicionar a tags para fornecer informações adicionais ou controlar o comportamento
+    dos elementos. Alguns atributos comuns incluem `class´, ìd´, `src´, `href´, `style´ e muito mais.
+
+----------------Estilos CSS:
+    Comecar a aprender CSS e como aplicar estilos aos elementos HTML. Posso usar seletores CSS para selecionar elementos especificos e aplicar
+    estilos usando propriedades como `color´, `font-family´, `background-color´, `margin´, `padding´ e muito mais.
+
+----------------Layout e posicionamento:
+    Aprender a controlar o layout e o posicionamento dos elementos na pagina usando CSS. Você pode usar tecnicas como o modelo de caixa, flexbox e 
+    grid para criar layouts responsivos.
+
+----------------Praticar:
+    A melhor maneira de aprender HTML e CSS é praticar. Criar pequenas paginas web, experimentar diferentes elementos, estilos e layouts.
+    Tentar recriar paginas existentes como exercicio para aprimorar as habilidades.
+-->
+
+
+<!-- 
+    1. ---------------- Estrutura basica de um documento HTML
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charsert="UTF-8">
+        <title>Título da página</title>
+    </head>
+    <body>
+        < Conteudo da pagina >
+    </body>
+    </html>
+
+        a) `<"DOCTYPE html>´: 
+            Essa declaração define o tipo de documento como HTML5. Ela deve ser colocada no inicio do documento para que o navegador saiba
+            como interpretar o codigo HTML.
+            
+        b) `<html>´:
+            A tag <html> é o elemento raiz de todo documento HTML. Ela engloba todo o conteudo da pagina.
+
+        c) `<head>´:
+            A tag <head> é usada para definir informaç~ies sobre o documento, como o titulo da pagina, os metadados e os estilos CSS. Essas informações
+                não sao exibidas na pagina, mas são importantes para os mecanismos de busca e outros processos de processamento de pagina.
+            
+        d) `<meta charset="UTF-8">´:
+            Essa tag define o conjunto de caracteres utilizado pelo documento. Neste exemplo, estamos usando o conjunto de caracteres UTF-8, que é aplamente utilizado
+            e suportad varios idiomas.
+        
+        e) `<title>´:
+            A tag <title> é usada para definir o titulo da pagina, que é exibido na barra de titulo do navegador ou na guia do navegador.
+
+        f) `<body>´:
+            A tag <body> é onde todo o conteudo visivel da pagina é colocado. Isso inclui textos, imagens, links e outros elementos que serão
+                exividos na pagina.
+
+                Dentro da tag <body>, você pode adicionar qualquer conteudo HTML valido para criar sua pagina web. Por exemplo, voocê pode usar tags
+                    como <h1> para titulos, <p> para paragrafos, <a> para links, <img> para imagens e muito mais.
+
+-->
+
+
+
+<!-- 
+    2. ----------------Tags e elementos HTML:
+
+    As tags HTML são usadas para estruturar e formatar o conteudo de uma pagina web. Cada tag HTML tem uma função especifica e pode conter outros elementos ou textos.
+
+    Algumas tags HTML comuns e exmeplos de como são usadas:
+
+        a) <h1> a <h6>:
+            As tags de cabeçalho são usadas para criar titulos e subtitulos na pagina.
+            <h1> é o maior e <h6> é o menor.
+
+                <h1>Título Principal</h1>
+                <h2>Subtítulo</h2>
+        
+
+        b) <p>:
+            A tag de paragrafo é usada para criar blocos de texto em um paragrafo.
+
+                <p>Este é um parágrafo de exemplo.</p>
+
+        
+        c) <a>:
+            A tag de link é usada para criar hiperlinks para outras paginas ou recursos. O atributo 'href' especifica o destino do link.
+
+                <a href='https://www.google.com'>link para o Google</a>
+
+        
+        d) <img>:
+            A tag de imagem é usada para exibir imagens na pagina. O atributo 'src' especifica o URL da imagem.
+
+                <img src='caminho/para/imagem.jpg' alt='Descrição da imagem'>
+
+
+        e) <ul> e <li>:
+            As tags de lista não ordenada <ul> e item de lista <li> são usadas para criar listas não ordenadas de itens.
+
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+
+
+        f) <table>, <tr>, <th>, <td>:
+            As tags de tabela são usadas para criar 
+                tabelas com linhas <tr>,
+                cabeçalhos de tabela <th>,
+                células de tabela <td>.
+
+                    <table>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                        </tr>
+                        <tr>
+                            <td>João</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Maria</td>
+                            <td>30</td>
+                        </tr>
+                    </table>
+            
+
+    Esses são apenas alguns exemplos de tags HTML. Existem muitas outras tags disponiveis para criar diferentes tipos
+    de elementos e conteudo na pagina, como formularios, elementos de midia, elementos de audio e video, entre outros.
+
+    Ao usar as tags HTML, é importante seguir a estrutura correta e fechar todas as tags abertas. Certifique-se de que os elementos estejam corretament
+    aninhados para evitar erros de marcação.
+
+    À medida que avanço no meu aprendizado de HTML, vou descobrir mais tags e recursos para criar paginas web mais complexas e interativas.
+
+-->
+
+
+
+<!--
+    3. ----------------Aninhamento de elementos:
+    O aninhamento de elementos permite criar estruturas hierárquicas e organizar o conteudo da pagina de forma mais detalhada.
+
+    No HTML, você pode aninhar elementos dentro de outros elementos, criando uma herarquia de elementos.
+
+            <div>
+                <h1>Titulo</h1>
+                <p>Paragrado de exemplo</p>
+            </div>
+
+
+    Nesse exemplo, a tag <div> é o elemento pai, e os elementos <h1> e <p> são elementos filhos aninhados dentro dele.
+        O resultado é que o titulo e o paragrafo estarão dentro do bloco definido pela tag <div>.
+
+        
+    Você pode aninha elementos HTML de forma arbitraria, criando estruturas complexas.
+
+                <div>
+                    <h1>Titulo</h1>
+                    <p>Paragrafo de exemplo</p>
+                    <div>
+                        <p>Outro paragrado aninhado</p>
+                        <ul>
+                            <li>Item 1 </li>
+                            <li>Item 2 </li>
+                        </ul>
+                    </div>
+                </div>
+
+    Nesse exemplo, temos um elemento <div> que contém um titulo, um paragrafo e outro elemento <div>. Dentro
+        de segundo <div>, temos um paragrado adicional e uma lista não ordenada.
+
+    Ao aninhar elementos, certifique-se de fecha-los na ordem correta. O primeiro elemento aberto deve ser o ultimo
+    a ser fechado. Isso garante uma estrutura HTML valida.
+
+    O aninhamento de elementos é uma tecnica poderosa para organiar o conteudo e criar layouts complexos em uma pagina web.
+    Ao planejar a estrutura de sua pagina, pense na hierarqui dos elementos e como eles se relacionam uns com os outros.
+
+    Lembrando que cada elemento aninhado herda estilos e propriedades dos elementos pai. Isso pode afetar a aparência e o comportamonto
+    dos elementos na pagina.
+
+-->
+
+
+<!--
+    4. ----------------Atributos HTML:
+    Os atributos são usados para fornecer informações adicionais aos elementos HTML, como configurações, valores ou 
+    comportamentos especificos. Eles são especificados dentro das tags dos elementos HTML e fornecem instruções aos navegadores sobre como processar e exibir o conteudo.
+
+    a) 'class':
+            O atributo 'class' é usado para definir uma ou mais classes para um elemento. As classes são usadas para aplicar estilos CSS ou selecionar elementos 
+            usando JavaScript.
+
+                    <div class='destaque'>Conteudo em destaque</div>
+    
+    
+    b) 'id':
+            O atributo 'id' é usado para definir um identificador exclusivo para um elemento. Ele é usado para para selecionar elemntos especificos
+            usando JavaScript ou aplicar estilos CSS especificos.
+
+                    <h1 id='titulo'>Titulo Principal</h1>
+
+
+    c) 'src':
+            O atributo 'src' é usado para especificar o URL de origem para elementos como 
+            <img>, <script> ou <iframe>.
+
+                    <img src='imagem.jpg' alt='Descrição da imagem utilizada'>
+
+        
+    d) 'href':
+            O atributo 'href' é usado para especificar o URL de destino para um link <a>.
+
+                    <a href='http://www.google.com'>Link do Google</a>
+
+
+    e) 'alt':
+            O atributo 'alt' é usado para fornecer um texto alternativo para elemntos como <img>, que é
+            exibido se a imagem não puder ser carregada.
+
+                    <img src='imagem.jpg' alt='Descrição da imagem'>
+
+
+    f) 'style':
+                O atributo 'style' é usada para aplicar estilos CSS diretamente a um elemento.
+                Ele permite definir propriedades como cor de fundo, tamanho de fonte, margens, etc.
+
+                    <p style='color: blue; font-size: 16px;'> Texto com estilo presonalizado</p>
+
+            
+    Esses são apenas alguns exemplos de atributos HTML. Cada elemento HTML pode ter atributos diferentes
+    disponiveis. É importante consultar a documentação ou referencias confiveis para aprender sobre os atributos 
+    disponiveis para cada elemento.
+
+    Alem disso, é essencial utilizar os atributos corretamente e seguir as melhores praticas. Por exemplo, evite dupicar 'id' em varios elementos, 
+    forneça textos alternativos significativos para imanges e use classes de forma consistente e descritiva.
+
+    Ao usar atributos, você pode estender a funcionalidade e o comportamento dos elenetos HTML, alem
+    de estiliza-los com CSS e interagir com eles usando JavaScript.
+
+
+-->
