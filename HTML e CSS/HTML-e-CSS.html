@@ -38,7 +38,7 @@ Estas seão as estapas que irei seguir para aorender HTML e CSS para criar pagin
 
 
 <!-- 
-    1. ---------------- Estrutura basica de um documento HTML
+    1. ---------------- Estrutura basica de um documento HTML:
 
     <!DOCTYPE html>
     <html>
@@ -260,3 +260,84 @@ Estas seão as estapas que irei seguir para aorender HTML e CSS para criar pagin
 
 
 -->
+
+
+
+<!--
+    ---------------- Estilos CSS:
+    O CSS (Cascading Style Sheets) permite que você defina cores, tamanhos, posições, fontes e outros estilos visuais
+    para elementos HTML. Ele trabalha em conjunto com o HTML para criar a aparencia desejada da pagina.
+
+    Existem varias maneitas de aplicar estilos CSS a elementos HTML.
+
+
+    1. -------------- Seletor CSS:
+        Um seletor CSS é usado para selecionar um ou mais elementos aois quais você deseja aplicar estilos. Por exemplo, você pode 
+        selecionar elementos por sua tag, classe, id ou atributos.
+
+            a) Seletor de tag:
+                Aplica estilos a todos os elementos com uma determinada tag.
+                    Exemplo `p {color: blue;}´
+            
+            b) Seletor de classe:
+                Aplica estilos a elementos com uma classe especifica.
+                    Exemplo `.destaque { font-weight: bold; }´
+
+            c) Seletor de id:
+                Aplica estilos a um elemento com um id especifico.
+                    Exemplo `input[type="text"] { border: 1px solid gray; }´
+
+                
+    2. -------------- Propriedades CSS:
+        As propriedades CSS definem os estilos que você deseja aplicar aos elementos selecionados.
+        Existem muitas propriedades disponiveis apra controlar varias caracteristicas visuais, como cor, tamanho
+        de fonte, margem, preenchimento, posição, etc.
+
+            a) 'color':
+                        Define a cor do texto: 'color: red;'
+            
+            b) 'font-size' :
+                        Define o tanaho da fonte. 'font-size: 16px;'
+
+            c) 'background-color' :
+                        Define a cor de fundo. 'background-color: #f1f1f1;'
+
+            d) 'margin' :
+                        Define as margens externas. 'margin: 10px;'
+
+            e)  'padding' :
+                        Define o preencimento interno. 'padding: 5px;'
+
+            f)  'position' :
+                        Define a posição do elemento. 'position: absolute;'
+
+    
+    3. -------------- Estilos em linha e estilos externos:
+        Você pode aplicar estilos CSS diretamente em um elemento HTML usando o atributo 'style'.
+
+            <p style="color: blue; font-size: 18px;"> Texto com estilo em lina</p>
+
+        Alem disso, é recomendado separar os estilos em um arquivo CSS externo e vinculá-lo á sua pagina HTML.
+
+            <link rel='stylesheet' href='css.css'>
+        
+        
+    4. -------------- Classes e herarquia:
+        É comum usasr classes CSS para aplicar estilos a varios elementos de maneira consistente. Ao atribuir uma classe a um elemento,
+        você pode estilizar todos os elementos com essa classe usando um seletor de classe.
+
+            <p class='destaque'>Texto em destaque</p>
+
+            no arquivo  CSS:
+        
+            .destaque {
+                color: red;
+                font-weiht: bold;
+            }
+
+        Além disso, a herarquia dos elementos pode influeniar os estilos. Estilos aplicados a um elemento pai podem afetar os elementos filhos aninhados.
+        Isso é util para criar layouts complexos e aplicar estilos em cascata.
+
+
+-->
+
